@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary-text:#fff;
+    --primary-special-text:#ff8733;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    background-image: url(TYEmzh.jpg);
+}
+
+section>header{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+    box-shadow: 0px 5px 15px black;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: darkkhaki;
+}
+
+.main-logo{
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: var(--primary-text);
+    span{
+        color: var(--primary-special-text);
+        font-weight: 750;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+header>.nav-item{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: var(--primary-text);
+
+    }
+    a:hover{
+        color: var(--primary-special-text);
+        transition: .5s;
+    }
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    border: white solid 1px;
+    background-color:#d8e7dd;
+
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.left{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    align-items: center;
+    justify-content: center;
+    background-color: cornsilk;
+    gap: 15px;
+    flex-direction: column;
+    backdrop-filter: blur(30px);
+
+}
+.right{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;    
+    }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.aboutme{
+    color: var(--primary-special-text);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.key{
+    padding: 20px;
+    color: #404542;
+}
+.Hobbies{
+    color: #404542;
+    padding: 20px;
+}
+.new{
+    padding: 20px;
+}
+.left1{
+    display: flex;
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+/* project section */
+.project {
+    height: fit-content;
+    color: var(--primary-special-text);
+
+    padding: 50px 20px;
+}
+
+.project>.all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+}
+
+.all-projects>.card {
+    height: 300px;
+    width: 550px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    top:-10px;
+}
+
+.all-projects>.card:hover {
+    transform: scale(1.05);
+}
+
+.all-projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project .project-title{
+
+    top:10px;  
+    left: 20px;
+    font-size: 2rem;
+    color: var(--primary-special-text1);
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+
+.all-projects .detail {
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .detail {
+    opacity: 1;
+}
+
+.detail .btns {
+    width: 550px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.detail a {
+    text-decoration: none;
+    background-color: var(--primary-special-text);
+    color: white;
+    margin: 15px 0px;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.detail a:hover {
+    background: #ff5c00;
+}
+.detail svg {
+    height: 100%;
+    width: 20px;
+}
+
+/* Service section */
+
+.service{
+    padding:20px;
+
+}
+
+.service-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 40px;
+    color: var(--primary-special-text);
+}
+
+.service-items{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card{
+    height: 300px;
+    width: 550px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    top:-10px;
+}
+
+.service-card h3 {
+    color: var(--primary-special-text);
+    font-size: 1.4rem;
+    justify-content: center;
+}
+
+.service-card p {
+    color: var(--primary-text);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2);
+    color: #404542;
+}
+
+.service-card>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* contact */
+
+.contact{
+    padding:20px;
+
+}
+
+.contact-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 40px;
+    color: var(--primary-special-text);
+}
+
+.contact-items{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-card{
+    height: 300px;
+    width: 550px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    top:-10px;
+}
+
+.contact-card h3 {
+    color: var(--primary-special-text);
+    font-size: 1.4rem;
+    justify-content: center;
+}
+
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2);
+    color: #404542;
+}
+
+.contact-card>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
